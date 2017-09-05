@@ -23,5 +23,5 @@ server.listen(port).on('error', function (e) {
   console.error('Port ' + port + ' is busy. Trying the next available port...');
   server.listen(++port);
 }).on('listening', function () {
-  console.log('Listening on http://localhost:' + port);
+  console.log('Listening on http://0.0.0.0:' + port);
 });
