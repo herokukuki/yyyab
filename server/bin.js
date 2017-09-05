@@ -14,7 +14,7 @@ var express = require('express'),
 
 var server = http.createServer(api);
 socket(server);
-var port = process.env.PORT || 9000;
+var port = process.env.PORT || 8080;
 
 server.listen(port).on('error', function (e) {
   if (e.code !== 'EADDRINUSE' && e.code !== 'EACCES') {
